@@ -1,0 +1,37 @@
+ZADATAK 1
+cd Desktop
+git clone https://github.com/Dario-Si/FIPU-OS-VJEZBE.git
+cd FIPU-OS-VJEZBE
+mkdir OS2_zadace
+cd OS2_zadace
+mkdir vjezba_2
+cd vjezba_2
+
+ZADATAK 2
+
+mkdir data && mkdir backup
+cd data
+touch script.js && touch style.css && touch .env
+
+echo 'console.log("Hello, World!")' > script.js && echo 'body { background-color: #f0f0f0; }' > style.css && echo 'VJEZBE=OS' > .env
+
+cat script.js && cat style.css && cat .env
+
+ZADATAK 3
+
+cp -av data/. backup/
+cd data
+ls -laS ../backup
+
+ZADATAK 4
+
+rm -iv script.js style.css
+cp -avn ../backup/. .
+ls -ltA1
+find . -maxdepth 1 ! -name .
+
+ZADATAK 5
+
+ls -laS
+ls -lhS
+tree -a
