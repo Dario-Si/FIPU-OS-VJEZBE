@@ -1,0 +1,48 @@
+    1  cd Desktop
+    2  git clone https://github.com/Dario-Si/FIPU-OS-VJEZBE.git
+    3  git clone https://github.com/Dario-Si/FIPU-OS-VJEZBE.git
+    4  cd FIPU-OS-VJEZBE
+    5  LS
+    6  mkdir OS4_zadace
+    7  ls
+    8  cd OS4_zadace
+    9  touch history.txt
+   10  history
+   11  history > history.txt
+
+Ažuriranje paketa
+sudo apt update
+sudo apt upgrade -y
+Instalacija OpenSSH Servera
+sudo apt install openssh-server -y
+sudo systemctl start ssh
+sudo systemctl status ssh
+Pronalaženje IP adrese VM-a
+ip a
+Provjera otvorenih portova
+sudo ss -tulnp
+Kako provjeriti koji port koristi SSH?
+sudo netstat -tulnp | grep srh
+SSH povezivanje – NAT mode
+U VirtualBoxu
+Settings → Network → Adapter 1 → NAT
+Advanced → Port Forwarding
+Name  Protocol  Host Port  Guest Port 
+SSH   TCP       2222       22         
+ssh dario-sibenik@127.0.0.1 -p 2222
+SSH povezivanje – Bridged mode
+Settings → Network → Adapter 1 → Bridged Adapter
+ip a
+dario-sibenik@10.63.166.246
+Izrada bash skripte preko SSH-a
+Prijeđi u home direktorij
+cd /home/dario-sibenik
+nano list_root.sh
+chmod +x list_root.sh
+./list_root.sh
+cat list_root.sh
+#!/bin/bash
+ls -la /
+ls -1 /home/dario-sibenik
+lsit_root.sh
+./list_root.sh
