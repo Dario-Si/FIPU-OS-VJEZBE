@@ -1,0 +1,84 @@
+Zadatak 4
+
+r = 4
+w = 2
+x = 1
+- = 0
+
+
+
+rwxr-xr-x	755
+rw-r--r--	644
+rwx------	700
+rw-rw-r--	664
+rwxrwxrwx	777
+r--r--r--	444
+rw-------	600
+
+
+rwxr-xr-x = 755
+
+Vlasnik: rwx = 7
+Grupa: r-x = 5
+Ostali: r-x = 5
+
+Vlasnik može čitati, pisati i izvršavati.
+Grupa može čitati i izvršavati.
+Ostali mogu čitati i izvršavati.
+
+
+rw-r--r-- = 644
+
+Vlasnik: rw- = 6
+Grupa: r-- = 4
+Ostali: r-- = 4
+
+Vlasnik može čitati i pisati.
+Grupa može samo čitati.
+Ostali mogu samo čitati.
+
+
+rwx------ = 700
+
+Vlasnik: rwx = 7
+Grupa: --- = 0
+Ostali: --- = 0
+
+Samo vlasnik ima sva prava.
+
+
+rw-rw-r-- = 664
+
+Vlasnik: rw- = 6
+Grupa: rw- = 6
+Ostali: r-- = 4
+
+Vlasnik i grupa mogu čitati i pisati.
+Ostali mogu samo čitati.
+
+
+rwxrwxrwx = 777
+
+Vlasnik: rwx = 7
+Grupa: rwx = 7
+Ostali: rwx = 7
+
+Svi imaju sva prava.
+
+
+r--r--r-- = 444
+
+Vlasnik: r-- = 4
+Grupa: r-- = 4
+Ostali: r-- = 4
+
+Svi mogu samo čitati.
+
+
+rw------- = 600
+
+Vlasnik: rw- = 6
+Grupa: --- = 0
+Ostali: --- = 0
+
+Samo vlasnik može čitati i pisati.

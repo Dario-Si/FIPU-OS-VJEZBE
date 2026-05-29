@@ -1,0 +1,41 @@
+PID (2629)
+Jedinstveni identifikator procesa.
+
+USER (dario-sibe)
+Korisnik koji je pokrenuo proces.
+
+PRI (20)
+Prioritet procesa. Vrijednost 20 označava zadani prioritet.
+
+NI (0)
+Nice vrijednost procesa. Vrijednost 0 znači da proces koristi zadani prioritet.
+
+VIRT (18604)
+Ukupna virtualna memorija koju proces može koristiti.
+
+RES (10076)
+Količina fizičke RAM memorije koju proces trenutno koristi.
+
+SHR (6908)
+Dijeljena memorija koju proces dijeli s drugim procesima.
+
+S 
+Proces se nalazi u stanju mirovanja jer izvršava naredbu.
+
+CPU% (0.0%)
+Proces trenutno ne koristi procesor.
+
+MEM% (0.2%)
+Proces koristi 0.2% ukupne RAM memorije.
+
+TIME+ (0:00.01)
+Ukupno procesorsko vrijeme koje je proces koristio.
+
+COMMAND (python3 hello.py)
+Naredba kojom je proces pokrenut.
+
+Tri načina prekidanja procesa:
+kill 2629
+kill -15 2629
+kill -9 2629
+kill -2 2629
